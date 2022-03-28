@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Project</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+        <li id="high-Score"><button> Highscores <button><i class="fas fa-hand-point-left fa-lg"></i>
+        </i></li>
+        <li style="float:right" id=timer> </li>
+        <li style="float:right"> Time:</li>
+        <ul>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id ="Start" >
+            <h2>Coding Quiz Challenge</h2>
+            <p>Try to answer the following code-related questions within the time limit.</p>
+            <p>Keep in mind that incorrect answer will penalise score/time by 10 seconds!</p>
+            </div>
+            <div id ="question-container" class="hide">
+                <div id="question">Question</div>
+                <div id="answer-container" class="btn-grid">
+                    <button class="btn">Answer1</button>
+                    <button class="btn">Answer2</button>
+                    <button class="btn">Answer3</button>
+                    <button class="btn">Answer4</button>
+                </div>
+                <hr>
+                <div id="response"></div>
+            </div>
+            <button id="start-btn" class="btn">Start Quiz</button>
+            <div id="Score-Container" class="hide">
+                <h2>High Score</h2>
+                <div id = "highscore-view"> </div>
+                <button id="back-btn" class="btn">Main Menu</button>
+                <button id ="clear-score"class="btn">Clear HighScore</button>
+            </div>
+            <div id="submit-container" class="hide">
+                <h2>All Done!</h2>
+                <span>Your final score is:</span>
+                <span id = score-view> </span>
+                <div>
+                    <label for="fname">Enter Initials:</label>
+                    <input type="text" id="fname" name="fname">
+                    <button id ="submit-score"class="btn"> Submit</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
